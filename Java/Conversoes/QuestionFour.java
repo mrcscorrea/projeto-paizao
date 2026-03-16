@@ -17,6 +17,8 @@ public class QuestionFour {
             System.out.println("Seu número " + number + " é positivo e ímpar.");
         } else if (number < 0 && calculo == 0) {
             System.out.println("Seu número " + number + " é negativo e par.");
+        } else {
+            System.out.println("Seu número " + number + " é negativo e ímpar.");
         }
     }
 }
