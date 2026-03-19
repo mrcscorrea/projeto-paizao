@@ -1,4 +1,4 @@
-package desktop;
+package br.com.fiap.PooSpace;
 
 import java.util.Scanner;
 

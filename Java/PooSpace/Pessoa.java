@@ -1,4 +1,4 @@
-package desktop;
+package br.com.fiap.PooSpace;
 
 public class Pessoa {
    private String nome;

@@ -1,4 +1,4 @@
-package desktop;
+package br.com.fiap.PooSpace;
 
 public class Carro {
     private String marca;
