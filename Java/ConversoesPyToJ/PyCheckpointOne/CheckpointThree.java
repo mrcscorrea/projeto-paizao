@@ -1,7 +1,7 @@
 package br.com.fiap.ConversoesPyToJ.PyCheckpointOne;
 import java.util.Scanner;
 
-public class CpQuestionThree {
+public class CheckpointThree {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
