@@ -1,4 +1,4 @@
-package br.com.fiap.exercises;
+package br.com.fiap.exercises.teory;
 
 public class UpperLowerCaseTeory {
     static void main(String[] args) {

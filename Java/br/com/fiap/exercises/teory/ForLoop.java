@@ -1,4 +1,4 @@
-package br.com.fiap.exercises;
+package br.com.fiap.exercises.teory;
 
 public class ForLoop {
     public static void main(String[] args){

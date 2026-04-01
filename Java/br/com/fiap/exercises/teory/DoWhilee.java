@@ -1,7 +1,7 @@
-package br.com.fiap.exercises;
+package br.com.fiap.exercises.teory;
 import java.util.Scanner;
 
-public class DoWhile {
+public class DoWhilee {
     public static void main(String[] args){
         Scanner oneScanner = new Scanner(System.in);
         int op;

@@ -1,8 +1,8 @@
-package br.com.fiap.exercises;
+package br.com.fiap.exercises.teory;
 
 import java.util.Scanner;
 
-public class Mercado {
+public class ScannerIntroduction {
     public static void main(String[] args){
 
         Scanner caixaMercado = new Scanner(System.in);
