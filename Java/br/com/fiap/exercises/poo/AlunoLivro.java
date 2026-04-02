@@ -12,5 +12,6 @@ public class AlunoLivro {
 
     void estudar() {
         System.out.println(nome + " está estudando o livro "+livro.getTitulo());
+        System.out.println("- O livro "+livro.getTitulo()+" é do autor "+livro.getAutor()+" e custa "+livro.getPreco());
     }
 }
