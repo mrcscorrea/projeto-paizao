@@ -6,16 +6,16 @@ public class MathCaseExerciseFour {
 
         Scanner scaneador = new Scanner(System.in);
 
-        IO.print("Digite um número: ");
+        System.out.print("Digite um número: ");
         int number = scaneador.nextInt();
 
         switch (number % 3) {
             case 0:
-                IO.print("Seu número é múltiplo de três");
+                System.out.println("Seu número é múltiplo de três");
                 break;
 
             default:
-                IO.print("Seu número não é múltiplo de três");
+                System.out.println("Seu número não é múltiplo de três");
         }
     }
 }
