@@ -6,12 +6,12 @@ public class MathCaseExerciseSix {
 
         Scanner scaneador = new Scanner(System.in);
 
-        IO.println("Menu de Opções\n\n1: Picanha - 25,00\n2: Lasanha - 20,00\n3: Strogonoff - 20,00\n4: Bife Acebolado - 15,00\n5: Pão com Ovo - 5,00");
+        System.out.println("Menu de Opções\n\n1: Picanha - 25,00\n2: Lasanha - 20,00\n3: Strogonoff - 20,00\n4: Bife Acebolado - 15,00\n5: Pão com Ovo - 5,00");
 
         double value = 0;
         String prato = "";
 
-        IO.println("Digite a opção do prato desejado e pressione ENTER para continuar: ");
+        System.out.println("Digite a opção do prato desejado e pressione ENTER para continuar: ");
         int option = scaneador.nextInt();
 
         switch (option) {
@@ -43,7 +43,7 @@ public class MathCaseExerciseSix {
 
         }
 
-        IO.println("Deseja pagar 10% de gorjeta ao garçom? (S/N): ");
+        System.out.println("Deseja pagar 10% de gorjeta ao garçom? (S/N): ");
         String optionGorjeta = scaneador.next();
 
         if (optionGorjeta.equalsIgnoreCase("S")) {
@@ -54,7 +54,7 @@ public class MathCaseExerciseSix {
         } else if (optionGorjeta.equalsIgnoreCase("N")) {
 
             value = value;
-            IO.println("Você comprou um " + prato + " e pagou um total de "+ value);
+            System.out.println("Você comprou um " + prato + " e pagou um total de "+ value);
 
             scaneador.close();
 

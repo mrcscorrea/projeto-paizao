@@ -6,9 +6,9 @@ public class Serasa {
     private boolean estaDevendo;
 
     Serasa(String nome, int idade, boolean estaDevendo) {
-        getNome();
-        getIdade();
-        getDivida();
+        setNome(nome);
+        setIdade(idade);
+        setDivida(estaDevendo);
     }
 
     String getNome() {
