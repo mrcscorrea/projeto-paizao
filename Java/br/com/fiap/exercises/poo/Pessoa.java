@@ -3,12 +3,14 @@ package br.com.fiap.exercises.poo;
 public class Pessoa {
    private String nome;
    private int idade;
-   private final Carro carro;
+   private String cpf;
+   private char genero;
 
-    Pessoa(String nome, int idade, Carro carro) {
+    Pessoa(String nome, int idade, String cpf, char genero) {
         setNome(nome);
         setIdade(idade);
-        this.carro = carro;
+        setCpf(cpf);
+        setGenero(genero);
     }
 
     String getNome() {
@@ -22,11 +24,18 @@ public class Pessoa {
         this.nome = nome;
     }
 
+    void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+    void setGenero(char genero) {
+        this.genero = genero;
+    }
+
     void setIdade(int idade) {
         this.idade = idade;
     }
 
     void apresentar() {
-        System.out.println("Olá meu nome é " + nome + " tenho " + idade + " anos e dirijo um " + carro.getModelo() );
+        System.out.println("Olá meu nome é " + nome + " tenho " + idade + " anos,");
     }
 }
