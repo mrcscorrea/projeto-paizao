@@ -5,9 +5,22 @@ public class Loader {
         Scanner sc = new Scanner(System.in);
 
         Produto p = new Produto("Notebook",1000);
-        Cliente c = new Cliente("Marcos", 1500);
 
-        c.comprar(p);
+
+        Pessoa pessoa = new Pessoa();
+        pessoa.setNome("Marcos");
+        pessoa.setIdade(19);
+        pessoa.setCpf("154.651.357-43");
+        pessoa.setGenero('M');
+        pessoa.apresentar();
+
+        Cliente cliente = new Cliente();
+        cliente.setNome("Marcos");
+        cliente.setIdade(19);
+        cliente.setCpf("154.651.357-43");
+        cliente.setGenero('M');
+        cliente.setCodigo(10);
+        cliente.
 //        System.out.println("Vamos criar seu novo produto!");
 //        System.out.println("Digite o nome do seu novo produto e pressione ENTER: ");
 //        String name = sc.nextLine();

@@ -6,6 +6,7 @@ public class Pessoa {
    private String cpf;
    private char genero;
 
+   Pessoa() {}
     Pessoa(String nome, int idade, String cpf, char genero) {
         setNome(nome);
         setIdade(idade);
@@ -36,6 +37,6 @@ public class Pessoa {
     }
 
     void apresentar() {
-        System.out.println("Olá meu nome é " + nome + " tenho " + idade + " anos,");
+        System.out.println("Olá meu nome é " + nome + " tenho " + idade + " anos, meu gênero é "+ genero +", meu cpf é " + cpf);
     }
 }
