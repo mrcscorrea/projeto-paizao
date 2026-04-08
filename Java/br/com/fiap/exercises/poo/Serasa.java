@@ -1,4 +1,5 @@
 package br.com.fiap.exercises.poo;
+import java.util.Scanner;
 
 public class Serasa {
     private String nome;
