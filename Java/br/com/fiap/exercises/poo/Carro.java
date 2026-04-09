@@ -1,9 +1,9 @@
 package br.com.fiap.exercises.poo;
 
 public class Carro {
-    private String marca;
-    private String modelo;
-    private int ano;
+    protected String marca;
+    protected String modelo;
+    protected int ano;
 
     String getMarca() {
         return marca;
@@ -18,11 +18,7 @@ public class Carro {
     }
 
     void setAno(int ano) {
-        if (ano >= 1890) {
-            this.ano = ano;
-        } else {
-            System.out.println("Você retornou um ano inválido");
-        }
+        this.ano = ano;
     }
 
     void setMarca(String marca) {

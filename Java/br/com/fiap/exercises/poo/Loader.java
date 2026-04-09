@@ -20,7 +20,7 @@ public class Loader {
         cliente.setCpf("154.651.357-43");
         cliente.setGenero('M');
         cliente.setCodigo(10);
-        cliente.
+
 //        System.out.println("Vamos criar seu novo produto!");
 //        System.out.println("Digite o nome do seu novo produto e pressione ENTER: ");
 //        String name = sc.nextLine();
