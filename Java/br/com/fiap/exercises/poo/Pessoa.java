@@ -1,17 +1,17 @@
-package br.com.fiap.exercises.poo;
+package br.com.fiap;
 
 public class Pessoa {
-   private String nome;
-   private int idade;
-   private String cpf;
-   private char genero;
+    protected String nome;
+    protected int idade;
+    protected String cpf;
+    protected String genero;
 
-   Pessoa() {}
-    Pessoa(String nome, int idade, String cpf, char genero) {
-        setNome(nome);
-        setIdade(idade);
-        setCpf(cpf);
-        setGenero(genero);
+    public Pessoa() {}
+    public Pessoa(String nome, int idade, String cpf, String genero) {
+       setNome(nome);
+       setIdade(idade);
+       setCpf(cpf);
+       setGenero(genero);
     }
 
     String getNome() {
@@ -20,23 +20,23 @@ public class Pessoa {
     int getIdade() {
         return idade;
     }
+    String getCpf() {
+        return cpf;
+    }
+    String getGenero() {
+        return genero;
+    }
 
     void setNome(String nome) {
         this.nome = nome;
     }
-
-    void setCpf(String cpf) {
-        this.cpf = cpf;
-    }
-    void setGenero(char genero) {
-        this.genero = genero;
-    }
-
     void setIdade(int idade) {
         this.idade = idade;
     }
-
-    void apresentar() {
-        System.out.println("Olá meu nome é " + nome + " tenho " + idade + " anos, meu gênero é "+ genero +", meu cpf é " + cpf);
+    void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+    void setGenero(String genero) {
+        this.genero = genero;
     }
 }

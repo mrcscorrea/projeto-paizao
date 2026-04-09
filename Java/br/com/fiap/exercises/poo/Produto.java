@@ -1,51 +1,37 @@
-package br.com.fiap.exercises.poo;
+package br.com.fiap;
 
 public class Produto {
-    private String nome;
-    private float preco;
+    protected String nome;
+    protected double preco;
 
-    String getNome() {
-        return nome;
-    }
-
-    float getPreco() {
-        return preco;
-    }
-
-    void setNome(String nome) {
+    public Produto() {}
+    public Produto(String nome, double preco) {
         this.nome = nome;
+        this.preco = preco;
     }
 
-    void setPreco(float preco) {
-        if (preco >= 0) {
-            this.preco = preco;
-        } else {
-            System.out.println("Preço inválido");
+    public double calcularDesconto(int porcentagem) {
+        return preco - preco * porcentagem/100;
+    }
+    public double calcularDesconto(double valor) {
+        return preco - valor;
+    }
+
+    @Override
+    public String toString() {
+        return "Nome: " + nome + "\nPreço: R$" + preco;
+    }
+    public double calcularDesconto(int qtd, boolean promocao) {
+        double valorFinal = preco * qtd;
+        if (promocao) {
+            if (qtd == 1) {
+                valorFinal *= 0.9;
+            } else if (qtd < 5) {
+                valorFinal *= 0.8;
+            } else {
+                valorFinal *= 0.7;
+            }
         }
-    }
-
-    Produto(String nome, float preco) {
-        setNome(nome);
-        setPreco(preco);
-    }
-
-    void exibirProduto() {
-        System.out.println("Exibição de produto");
-        System.out.println("Nome: "+nome);
-        System.out.println("Preço: R$"+preco);
-    }
-
-    void aplicarDesconto(float percentual) {
-        if (percentual >= 0 && percentual <= 100) {
-            float desconto = preco * (percentual / 100);
-            setPreco(preco - desconto);
-        } else {
-            System.out.println("Não foi possível aplicar desconto.");
-        }
-    }
-
-    void aumentarPreco(float percentual) {
-        float aumento = preco * (percentual/100);
-        setPreco(preco + aumento);
+        return valorFinal;
     }
 }
