@@ -1,4 +1,4 @@
-package br.com.fiap.project;
+package br.com.fiap.exercises.poo.project.produtos.repository;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
