@@ -1,5 +1,8 @@
 package br.com.fiap.exercises.poo.project.produtos.repository;
 
+import br.com.fiap.exercises.poo.project.produtos.model.Categoria;
+import br.com.fiap.exercises.poo.project.produtos.model.Produto;
+import br.com.fiap.exercises.poo.project.produtos.repository.ProdutoCollectionRepository;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Vector;
