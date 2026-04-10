@@ -80,7 +80,8 @@ public class Produto extends Categoria {
         return categoria;
     }
     public Produto setCategoria(Categoria categoria) {
-        this.categoria = categoria; return this;
+        this.categoria = categoria;
+        return this;
     }
 
 
