@@ -1,5 +1,8 @@
 package br.com.fiap.exercises.poo.project.produtos.repository;
 
+import br.com.fiap.exercises.poo.project.produtos.model.Categoria;
+import br.com.fiap.exercises.poo.project.produtos.model.Produto;
+
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.Arrays;
@@ -47,7 +50,7 @@ public class ProdutoCollectionRepository {
 
     public static List<Produto> findByCategoria(Categoria categoria) {
         return produtos.stream()
-                .filter(p -> p.setCategoria().equals(categoria))
+                .filter(p -> p.getCategoria().equals(categoria))
                 .toList();
     }
 
