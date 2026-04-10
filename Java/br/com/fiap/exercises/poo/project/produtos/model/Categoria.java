@@ -15,11 +15,11 @@ public class Categoria {
         this.setId(id);
         this.setNome(nome);
     }
-    String getNome() {
+    public String getNome() {
         return nome;
     }
 
-    Long getId() {
+    public Long getId() {
         return id;
     }
 
