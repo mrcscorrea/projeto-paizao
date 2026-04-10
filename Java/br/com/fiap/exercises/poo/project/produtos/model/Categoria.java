@@ -1,4 +1,4 @@
-package br.com.fiap.project.produtos.model;
+package br.com.fiap.exercises.poo.project.produtos.model;
 
 import java.util.Objects;
 
