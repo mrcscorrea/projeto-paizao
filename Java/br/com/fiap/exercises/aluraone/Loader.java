@@ -20,7 +20,7 @@ public class Loader {
         System.out.println("Nome: "+c.name);
         System.out.println("Tipo de conta: "+c.accountType);
         System.out.println("Saldo: R$"+c.getSaldo());
-        System.out.println("=== 2026 ===");
+        System.out.println("=== 2026 ===\n\n");
         System.out.println("Digite a opção desejada:\n\n1: Consultar saldo\n2: Receber pix\n3: Realizar pix\n4: Sair");
         int option = sc.nextInt();
 
