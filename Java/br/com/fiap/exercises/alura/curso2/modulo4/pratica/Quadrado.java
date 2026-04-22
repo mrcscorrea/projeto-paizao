@@ -9,8 +9,8 @@ public class Quadrado implements Forma {
     }
 
     @Override
-    public void calcularArea() {
+    public double calcularArea() {
         double area = Math.pow(lado,2);
-        System.out.println("Área do quadrado: " + area);
+        return area;
     }
 }
