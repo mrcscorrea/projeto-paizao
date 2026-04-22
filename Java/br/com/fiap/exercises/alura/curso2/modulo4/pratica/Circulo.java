@@ -9,8 +9,8 @@ public class Circulo implements Forma {
     }
 
     @Override
-    public void calcularArea() {
+    public double calcularArea() {
         double area = 3.14 * Math.pow(raio,2);
-        System.out.println("Área do círculo: " + area);
+        return area;
     }
 }
