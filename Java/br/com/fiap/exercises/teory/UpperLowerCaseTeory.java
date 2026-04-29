@@ -7,8 +7,8 @@ public class UpperLowerCaseTeory {
         String nomeMaiusculo = nome.toUpperCase();
         String nomeMinusculo = nome.toLowerCase();
 
-        System.out.println(nome);
-        System.out.println(nomeMaiusculo);
-        System.out.print(nomeMinusculo);
+        IO.println(nome);
+        IO.println(nomeMaiusculo);
+        IO.print(nomeMinusculo);
     }
 }
