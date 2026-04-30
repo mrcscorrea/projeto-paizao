@@ -10,8 +10,33 @@ public class Administrador implements Autenticavel {
         this.codigo = codigo;
     }
 
+    public String getSenha() {
+        return senha;
+    }
+
+    public void setSenha(String senha) {
+        this.senha = senha;
+    }
+
+    public int getCodigo() {
+        return codigo;
+    }
+
+    public void setCodigo(int codigo) {
+        this.codigo = codigo;
+    }
+
     @Override
     public boolean autenticar(String s) {
-        return this.senha.equals(s) && codigo == 1301;
+        if (this.senha.equals(s) && codigo == 1301) {
+            System.out.println("SENHA OK e CÓDIGO OK");
+            return true;
+        } else if (this.senha.equals(s)){
+            System.out.println("SENHA OK e CÓDIGO INVÁLIDO");
+            return false;
+        } else {
+            System.out.println("SENHA E CÓDIGO INVÁLIDOS");
+            return false;
+        }
     }
 }

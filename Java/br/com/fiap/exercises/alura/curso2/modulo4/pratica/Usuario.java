@@ -8,8 +8,22 @@ public class Usuario implements Autenticavel {
         this.senha = senha;
     }
 
+    public String getSenha() {
+        return senha;
+    }
+
+    public void setSenha(String senha) {
+        this.senha = senha;
+    }
+
     @Override
     public boolean autenticar(String senhaDigitada) {
-        return this.senha.equals(senhaDigitada);
+        if (this.senha.equals(senhaDigitada)) {
+            System.out.println("SENHA OK");
+            return true;
+        } else {
+            System.out.println("SENHA INCORRETA");
+            return false;
+        }
     }
 }
