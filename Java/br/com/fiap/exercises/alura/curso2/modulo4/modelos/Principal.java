@@ -7,18 +7,14 @@ import java.util.ArrayList;
 public class Principal {
     public static void main(String[] args) {
 
-        Filme meuFilme = new Filme();
-        meuFilme.setNome("Transformers");
-        meuFilme.setAnoDeLancamento(2007);
+        Filme meuFilme = new Filme("Transformers", 2007);
         meuFilme.setIncluidoNoPlano(true);
         meuFilme.setSomaDasAvaliacoes(10);
         meuFilme.setTotalDeAvaliacoes(1);
         meuFilme.exibeFichaTecnica();
         System.out.println(meuFilme.pegaMedia());
 
-        Serie serie = new Serie();
-        serie.setNome("Transfomers G1");
-        serie.setAnoDeLancamento(1980);
+        Serie serie = new Serie("Transfomers G1", 1980);
         serie.exibeFichaTecnica();
         serie.setTemporadas(10);
         serie.setEpisodiosPorTemporada(10);
@@ -34,9 +30,7 @@ public class Principal {
         episodio.setTotalVisualizacoes(300);
         filtro.filtra(episodio);
 
-        var gow = new Filme();
-        gow.setNome("God of War");
-        gow.setAnoDeLancamento(2000);
+        var gow = new Filme("God of War", 2000);
         gow.setDiretor("Santa Monica Studios");
         gow.avalia(10);
 
@@ -45,8 +39,9 @@ public class Principal {
         listaDeFilmes.add(meuFilme);
 
         System.out.println("Tamanho da lista: " + listaDeFilmes.size());
-        System.out.println(listaDeFilmes.get(0).getNome());
+        System.out.println(listaDeFilmes.getFirst().getNome());
         System.out.println(listaDeFilmes);
-        System.out.println("toString do filme " + listaDeFilmes.get(0).toString());
+        System.out.println("toString do filme " + listaDeFilmes.getFirst().toString());
+
     }
 }

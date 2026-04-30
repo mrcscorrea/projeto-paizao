@@ -8,6 +8,10 @@ public class Filme extends Titulo implements Classificavel {
     public String getDiretor() { return this.diretor; }
     public void setDiretor(String d) { this.diretor = d; }
 
+    public Filme(String n, int anoDeLancamento) {
+        super(n, anoDeLancamento);
+    }
+
     @Override
     public int getClassificacao() {
         return (int) pegaMedia()/2;
