@@ -1,17 +1,17 @@
-package br.com.fiap;
+package br.com.fiap.exercises.poo;
 
 public class ProdutoEletronico extends Produto {
     protected boolean garantia;
 
     public ProdutoEletronico() {}
-    public ProdutoEletronico(String nome, double preco, boolean garania) {
+    public ProdutoEletronico(String nome, float preco, boolean garania) {
         super(nome,preco);
         setGarantia(garantia);
     }
 
     @Override
     public double calcularDesconto(int qtd, boolean promocao) {
-        double valorFinal = preco + qtd;
+        double valorFinal = getPreco() + qtd;
         if (qtd > 2 && promocao) {
             valorFinal *=0.95;
         }

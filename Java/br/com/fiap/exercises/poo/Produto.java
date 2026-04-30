@@ -24,7 +24,8 @@ public class Produto {
         }
     }
 
-    Produto(String nome, float preco) {
+    public Produto() {}
+    public Produto(String nome, float preco) {
         setNome(nome);
         setPreco(preco);
     }
@@ -42,6 +43,24 @@ public class Produto {
         } else {
             System.out.println("Não foi possível aplicar desconto.");
         }
+    }
+
+    public double calcularDesconto(int qtd) {
+        double valorFinal = getPreco() + qtd;
+        if (qtd > 2) {
+            valorFinal *=0.95;
+        }
+        return valorFinal;
+
+    }
+
+    public double calcularDesconto(int qtd, boolean promocao) {
+        double valorFinal = getPreco() + qtd;
+        if (qtd > 2 && promocao) {
+            valorFinal *=0.95;
+        }
+        return valorFinal;
+
     }
 
     void aumentarPreco(float percentual) {
