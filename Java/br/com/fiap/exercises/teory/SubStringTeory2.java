@@ -6,8 +6,8 @@ public class SubStringTeory2 {
         String nomeCompleto = "Marcos Vinícios";
         int spacePosition = nomeCompleto.indexOf(" ");
         String nome = nomeCompleto.substring(0, spacePosition);
-        IO.println(nome);
+        System.out.println(nome);
         String sobrenome = nomeCompleto.substring(spacePosition + 1);
-        IO.println(sobrenome);
+        System.out.println(sobrenome);
     }
 }

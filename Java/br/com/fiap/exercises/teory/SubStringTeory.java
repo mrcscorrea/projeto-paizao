@@ -5,7 +5,7 @@ public class SubStringTeory {
         String nome = ("FIAP A MELHOR");
         String result = nome.substring(0,5);
         String result2 = nome.substring(6);
-        IO.println(result);
-        IO.println(result2);
+        System.out.println(result);
+        System.out.println(result2);
     }
 }
